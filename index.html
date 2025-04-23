@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databases II Tasks</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .week {
+      margin-bottom: 2rem;
+    }
+    .week h3 {
+      cursor: pointer;
+      background-color: #6a1b9a;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .homework-section {
+      display: none;
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+    .task-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  </style>
+  <script>
+    function toggleHomework(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Carlos José Torre García</h1>
+    <p>Webpage for Databases II Tasks</p>
+  </header>
+
+  <main>
+    <section class="tasks">
+      <h1>My Works</h1>
+      <hr>
+
+      <!-- Repeat for weeks 1 to 8 -->
+      <!-- Example Week -->
+      <div class="week">
+        <h3 onclick="toggleHomework('week1')">📅 Week 1</h3>
+        <div id="week1" class="homework-section">
+    
+          <div class="task-list">
+            
+          </div>
+
+          <h4>📘 Teoric Homework</h4>
+          <div class="task-list">
+            <a href="tasks/Task 1 Resume.pdf" class="task-card" target="_blank">
+              📖 Homework 1 - Sistemas Gestores De Base de Datos - Resume (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- You can copy and update this structure for week 2 to week 8 -->
+      <div class="week">
+        <h3 onclick="toggleHomework('week2')">📅 Week 2</h3>
+        <div id="week2" class="homework-section">
+          <h4>🛠️ Practical Homework</h4>
+          <div class="task-list">
+            <a href="tasks/diagram of exercise 1.png" class="task-card" target="_blank">
+              🖼️ Homework 1 - First Exercise - Entity Relationship (Image)
+            </a>
+            <a href="tasks/diagram of exercise 2.png" class="task-card" target="_blank">
+              🖼️ Homework 2 - Second Exercise - Entity Relationship (Image)
+            </a>
+         
+          </div>
+
+        
+          <div class="task-list">
+            <!-- Add more files for Week 2 here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat structure up to week 8 -->
+<!-- You can copy and update this structure for week 2 to week 8 -->
+<div class="week">
+  <h3 onclick="toggleHomework('week3')">📅 Week 3</h3>
+  <div id="week3" class="homework-section">
+    <h4>🛠️ Practical Homework</h4>
+    <div class="task-list">
+      <a href="tasks/TABLES OF EXERCISES.xlsx" class="task-card" target="_blank">
+        📊 Homework 3 - Table Data (Excel)
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="week">
+  <h3 onclick="toggleHomework('week4')">📅 Week 4</h3>
+  <div id="week4" class="homework-section">
+    <h4>🛠️ Practical Homework</h4>
+    <div class="task-list">
+      <a href="tasks/diagram of exercise 2.1.png" class="task-card" target="_blank">
+        🖼️ Homework 1 - First Exercise - Entity Relationship Model (Image)
+      </a>
+
+      <a href="tasks/Exercise 2.2.png" class="task-card" target="_blank">
+        🖼️ Homework 2 - Second Exercise - Entity Relationship Model (Image)
+      </a>
+
+      <a href="tasks/TABLES OF EXERCISES 2.xlsx" class="task-card" target="_blank">
+        📊 Homework 3 - Table Data - Relational Model (Excel)
+      </a>
+    </div>
+  </div>
+</div>
+    
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 🖥️ by Carlos José Torre García | Databases II - 2025</p>
+  </footer>
+</body>
+</html>
